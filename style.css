@@ -1,0 +1,840 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #f9edc9,
+    #f6e7a1,
+    #f9edc9
+  );
+  background-size: 400% 400%;
+  animation: fondoPastel 15s ease infinite;
+
+}
+
+.gif-sticker {
+  width: 200px; /* Tamaño ideal para estar junto al texto */
+  height: auto;
+  vertical-align: middle; /* Lo alinea con las letras */
+  margin-left: 8px;
+  border-radius: 10px; /* Bordes suaves */
+  
+  /* Efecto de flotar suave que creamos antes */
+  animation: flotarSuave 3s ease-in-out infinite;
+  
+  /* Filtro para que resalte sobre el fondo pastel */
+  filter: drop-shadow(2px 2px 5px rgba(255, 182, 193, 0.5));
+}
+
+@keyframes flotarSuave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.gif-sticker-2 {
+  width: 80px; /* Tamaño ideal para estar junto al texto */
+  height: auto;
+  vertical-align: middle; /* Lo alinea con las letras */
+  margin-left: 8px;
+  border-radius: 10px; /* Bordes suaves */
+  
+  /* Efecto de flotar suave que creamos antes */
+  animation: flotarSuave 3s ease-in-out infinite;
+  
+  /* Filtro para que resalte sobre el fondo pastel */
+  filter: drop-shadow(2px 2px 5px rgba(255, 182, 193, 0.5));
+}
+
+@keyframes flotarSuave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.gif-sticker-3 {
+  width: 100px !important; /* Tamaño ideal para estar junto al texto */
+  height: auto;
+  vertical-align: middle; /* Lo alinea con las letras */
+  margin-left: 8px;
+  border-radius: 10px; /* Bordes suaves */
+  
+  /* Efecto de flotar suave que creamos antes */
+  animation: flotarSuave 3s ease-in-out infinite;
+  
+  /* Filtro para que resalte sobre el fondo pastel */
+  filter: drop-shadow(2px 2px 5px rgba(255, 182, 193, 0.5));
+}
+
+@keyframes flotarSuave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.texto-romantico {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.3rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Para que en celular no se amontone */
+}
+
+
+.inicio{
+  margin-top:40px;
+}
+
+.foto-redonda{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.mensaje{
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 8px rgba(253, 253, 253, 0.877);
+  color: #e20f4e;
+}
+
+.antes{
+  font-family: 'delius';
+  color:#e63946;
+  text-align:center;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 8px rgba(253, 253, 253, 0.877);
+  color: #e20f4e;
+}
+
+.foto-redonda{
+  animation: aparecer 2s ease-in-out;
+}
+
+@keyframes aparecer{
+  from{opacity:0; transform:scale(0.8);}
+  to{opacity:1; transform:scale(1);}
+}
+
+
+h3{
+  color:#e63946;
+}
+
+h3{
+  font-family: 'honk', cursive;
+  color:#e63946;
+  text-align:center;
+}
+
+h1{
+  color:#e63946;
+}
+
+h1{
+  font-family: 'Petit Formal Script', cursive;
+  color:#e63946;
+  text-align:center;
+}
+
+h1{
+  animation: aparecer 2s ease-in-out;
+}
+
+@keyframes aparecer{
+  from{opacity:0; transform:translateY(-20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+button{
+  animation: latido 1.5s infinite;
+  
+}
+
+.heart{
+  animation: flotar 5s linear infinite;
+}
+
+@keyframes flotar{
+  0%{transform:translateY(0); opacity:1;}
+  100%{transform:translateY(-100vh); opacity:0;}
+}
+
+.sobre{
+  animation: flotarCarta 3s ease-in-out infinite;
+}
+
+@keyframes flotarCarta{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-10px);}
+  100%{transform:translateY(0);}
+}
+
+
+@keyframes latido{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.1);}
+  100%{transform:scale(1);}
+}
+
+
+button{
+  font-family: 'Playpen Sans', cursive;
+  background:#ff6b6b;
+  color:white;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+button{
+  padding:15px 25px;
+  font-size:18px;
+  background:#ff4d6d;
+  color:white;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  margin-top:20px;
+}
+
+
+
+/* CONTADOR */
+.contador{
+  font-size:30px;
+  color:#e20f4e;
+  margin-top:10px;
+  font-family:'delius', sans-serif;
+  text-shadow: 0 0 8px rgb(255, 255, 255);
+  color: #f02054cc;
+}
+
+.repertorio {
+  text-align: center;
+}
+
+.lista-canciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.cancion {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: rgba(255,255,255,0.3);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.cancion p {
+  font-family:'Delius Swash Caps', sans-serif;
+  color: #ff6b6b;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.cancion:hover {
+  transform: scale(1.05);
+}
+
+
+/* SOBRE */
+.sobre{
+  position:relative;
+  width:260px;
+  height:180px;
+  background:#ff8fa3;
+  margin:40px auto;
+  border-radius:10px;
+  overflow:hidden;
+  z-index:2;
+}
+
+.tapa{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:#ff4d6d;
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
+  transform-origin: top;
+  transition:1s;
+}
+
+.carta{
+  position:absolute;
+  width:90%;
+  height:90%;
+  background:white;
+  top:5%;
+  left:5%;
+  border-radius:10px;
+  padding:15px;
+  box-sizing:border-box;
+  transform: translateY(100%);
+  transition:1s;
+  font-size:14px;
+}
+
+.abrir .tapa{
+  transform: rotateX(180deg);
+}
+
+.abrir .carta{
+  transform: translateY(0);
+}
+
+.carta-grande{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+
+  background: rgba(0,0,0,0.6);
+  display:none;
+
+  justify-content:center;
+  align-items:center;
+}
+
+@keyframes abrirCarta{
+  from{
+    transform:scale(0.5);
+    opacity:0;
+  }
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+.cerrar{
+  float:right;
+  cursor:pointer;
+  font-size:22px;
+}
+
+/* FONDO QUE TAPA TODO */
+.carta-magica{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+
+  background: radial-gradient(circle,#1a1a40,#000);
+  
+  display:none;
+  justify-content:center;
+  align-items:center;
+
+  z-index:9999;
+}
+
+/* CARTA */
+.contenido-carta{
+  background: linear-gradient(180deg,#0f172a,#1e3a8a,#312e81);
+  color:white;
+  width:90%;
+  max-width:500px;
+  height:80%;
+  padding:30px;
+  border-radius:20px;
+
+  overflow-y:auto;
+
+  box-shadow:0 0 40px rgba(255,255,255,0.8);
+
+  animation: magia 0.8s ease;
+}
+
+.contenido-carta p{
+  color:#e0e7ff;
+}
+
+
+.contenido-carta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-image:
+    radial-gradient(2px 2px at 10% 20%, white, transparent),
+    radial-gradient(2px 2px at 30% 40%, white, transparent),
+    radial-gradient(1.5px 1.5px at 50% 60%, white, transparent),
+    radial-gradient(2px 2px at 70% 30%, white, transparent),
+    radial-gradient(1.5px 1.5px at 90% 80%, white, transparent),
+    radial-gradient(2px 2px at 20% 70%, white, transparent),
+    radial-gradient(1.5px 1.5px at 80% 10%, white, transparent),
+    radial-gradient(2px 2px at 60% 90%, white, transparent),
+    radial-gradient(1.5px 1.5px at 40% 15%, white, transparent),
+    radial-gradient(2px 2px at 75% 55%, white, transparent);
+
+  opacity:0.8;
+  pointer-events:none;
+}
+
+
+@keyframes parpadeo{
+  0%{opacity:0.4;}
+  50%{opacity:1;}
+  100%{opacity:0.4;}
+}
+
+.contenido-carta::before{
+  animation: parpadeo 3s infinite;
+}
+
+/* ANIMACIÓN MÁGICA */
+@keyframes magia{
+  from{
+    transform:scale(0.3) rotate(-10deg);
+    opacity:0;
+  }
+  to{
+    transform:scale(1) rotate(0);
+    opacity:1;
+  }
+}
+
+/* BOTÓN CERRAR */
+.cerrar{
+  float:right;
+  font-size:22px;
+  cursor:pointer;
+}
+
+
+@keyframes brillos{
+  from{opacity:0.3;}
+  to{opacity:1;}
+}
+
+.cerrar{
+  position:relative;
+  z-index:10000;
+}
+
+
+/* CORAZONES */
+.heart{
+  position:fixed;
+  bottom:-10px;
+  color:red;
+  font-size:20px;
+  animation:flotar 6s linear infinite;
+  z-index:1;
+}
+
+@keyframes flotar{
+  0%{transform:translateY(0); opacity:1;}
+  100%{transform:translateY(-100vh); opacity:0;}
+}
+
+.tabs{
+  margin-top:40px;
+}
+
+.tabs button{
+  background:#6a4c93;
+  color:white;
+  border:none;
+  padding:12px;
+  margin:5px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.contenido{
+  display:none;
+  margin-top:20px;
+  color:white;
+}
+
+.foto{
+  width:130px;
+  border-radius:15px;
+  margin:10px;
+}
+
+.poema{
+  font-family:'Dancing Script', cursive;
+  font-size:24px;
+  opacity:0;
+  animation: aparecerTexto 2s forwards;
+
+}
+
+@keyframes aparecerTexto{
+  to{opacity:1;}
+}
+
+
+
+/* AJUSTES PARA CELULAR */
+@media (max-width:600px){
+
+  h1{
+    font-size:28px;
+  }
+
+  p{
+    font-size:18px;
+  }
+
+  button{
+    font-size:20px;
+    padding:18px;
+  }
+
+  #contador{
+    font-size:22px;
+  }
+
+  .carta{
+    font-size:18px;
+  }
+
+  .sobre{
+    width:90%;
+    height:200px;
+  }
+
+}
+ 
+.entrar {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: flotar 1s ease forwards;
+}
+
+@keyframes aparecerTexto {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-playlist {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.btn-playlist:hover {
+  transform: scale(1.05);
+}
+
+.timeline{
+  position:relative;
+  max-width:500px;
+  margin:auto;
+  padding-left:30px;
+
+}
+
+/* línea del centro */
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  width:3px;
+  height:100%;
+  background:#facc15;
+  transform:translateX(-50%);
+}
+
+.momento{
+  width:50%;
+  padding:20px;
+  box-sizing:border-box;
+  position:relative;
+}
+
+/* IZQUIERDA */
+.izquierda{
+  left:0;
+  text-align:right;
+}
+
+/* DERECHA */
+.derecha{
+  left:50%;
+}
+
+/* fotos */
+.momento img{
+  width:150px;
+  border-radius:15px;
+  border:3px solid white;
+}
+
+/* texto */
+.momento p{
+  color:#fcd34d;
+  font-weight:bold;
+}
+
+.momento span{
+  display:block;
+  margin-bottom:10px;
+  font-weight:bold;
+  color:#fcd34d;
+}
+
+
+/* puntito línea */
+.momento::after{
+  content:"";
+  position:absolute;
+  top:40px;
+  width:15px;
+  height:15px;
+  background:#facc15;
+  border-radius:50%;
+}
+
+.izquierda::after{
+  right:-8px;
+}
+
+.derecha::after{
+  left:-8px;
+}
+
+/* ESTADO OCULTO */
+.oculto{
+  opacity:0;
+  transform:translateY(40px);
+}
+
+/* CUANDO APARECE */
+.mostrar{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.visor{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.visor img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:15px;
+}
+
+.visor span{
+  position:absolute;
+  top:20px;
+  right:25px;
+  font-size:30px;
+  color:white;
+  cursor:pointer;
+}
+
+@media(max-width:600px){
+
+.timeline::before{
+  left:20px;
+}
+
+.momento{
+  width:100%;
+  padding-left:50px;
+}
+
+.izquierda,
+.derecha{
+  left:0;
+  text-align:left;
+}
+
+.momento::after{
+  left:12px;
+}
+}
+
+.multi-fotos{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.multi-fotos img{
+  width:90px;
+  height:90px;
+  object-fit:cover;
+  border-radius:12px;
+  border:2px solid white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.multi-fotos img:hover{
+  transform:scale(1.1);
+}
+
+.conclusion{
+  background:rgba(255,255,255,0.4);
+  padding:20px;
+  border-radius:20px;
+  backdrop-filter: blur(5px);
+}
+
+.chat-pensamientos{
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Un poco más de espacio entre burbujas */
+  padding: 30px;
+  background: rgba(255, 240, 246, 0.6); /* Un poco transparente para que se vea el fondo de atrás */
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+/* Burbuja de pensamiento */
+.pensamiento{
+  background: #ffd6e7;
+  padding: 20px 25px; /* Más aire adentro para que no se vea apretado */
+  border-radius: 25px 25px 5px 25px; /* Efecto de burbuja de chat izquierda */
+  max-width: 85%;
+  align-self: flex-start; /* Las alinea a la izquierda como si él las recibiera */
+  
+  text-align: left; /* Alinea el poema a la izquierda dentro de la burbuja */
+  font-size: 16px; /* Un poquito más grande para que sea legible */
+  color: #d63384; /* Color de letra rosa fuerte/rojo */
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6; /* Más espacio entre renglones del poema */
+
+  box-shadow: 5px 5px 15px rgba(255, 182, 193, 0.4);
+  border: 2px solid white; /* Borde blanco para el efecto "sticker" */
+  
+  animation: aparecer 0.8s ease-out;
+  word-wrap: break-word; /* Evita que el texto se salga del cuadro */
+}
+
+@keyframes aparecer{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* 1. Animación para que la burbuja aparezca suavemente */
+@keyframes entradaBurbuja {
+  from { opacity: 0; transform: translateY(20px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.pensamiento {
+  opacity: 0; /* Empiezan invisibles */
+  animation: entradaBurbuja 0.8s ease-out forwards;
+  /* ... (mantén tus otros estilos de fondo rosa y bordes) ... */
+}
+
+/* 2. Retraso para cada burbuja (Para que aparezcan una por una) */
+.pensamiento:nth-child(1) { animation-delay: 1s; }  /* Aparece al segundo 1 */
+.pensamiento:nth-child(2) { animation-delay: 5s; }  /* Aparece al segundo 4 */
+.pensamiento:nth-child(3) { animation-delay: 10s; }  /* Aparece al segundo 7 */
+.pensamiento:nth-child(4) { animation-delay: 15s; }  /* Aparece al segundo 7 */
+.pensamiento:nth-child(5) { animation-delay: 20s; }  /* Aparece al segundo 7 */
+/* 3. Efecto de "Escribiendo..." (Opcional pero muy cool) */
+.pensamiento::after {
+  content: "|";
+  animation: parpadeo 0.8s infinite;
+  color: #d63384;
+  margin-left: 5px;
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+#password-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#password-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+}
+#password-box input {
+  padding: 10px;
+  width: 80%;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#password-box button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background: #ff69b4;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#password-box button:hover {
+  background: #ff85c1;
+}
+
+
+/* tiempos de entrada */
+.d1 { animation-delay: 0.5s; }
+.d2 { animation-delay: 1.2s; }
+.d3 { animation-delay: 2s; }
+.d4 { animation-delay: 2.8s; }
+
+.entrar { animation: aparecerTexto 1s ease forwards; }
+.d2 { animation-delay: 1s; }
+.glow { text-shadow: 0 0 10px pink; }
+.grande { font-size: 24px; }
+
+
+
